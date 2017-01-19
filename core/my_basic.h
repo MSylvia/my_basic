@@ -89,7 +89,7 @@ extern "C" {
 #endif /* OS dependent macro */
 
 #ifndef MBAPI
-#	define MBAPI
+#	define MBAPI __declspec(dllexport) // Export for dll
 #endif /* MBAPI */
 
 #ifndef MB_SIMPLE_ARRAY
